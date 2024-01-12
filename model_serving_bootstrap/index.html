@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Personal - Start Bootstrap Theme</title>
+        <title>Artist Prediction</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Custom Google font-->
@@ -223,6 +223,7 @@
         <script src="js/scripts.js"></script>
         <!-- model serving JS -->
         <script>
+
             let file = null;
             let imgSrc = null;
 
@@ -251,10 +252,13 @@
                     const result = await response.json();
                     const artist = result["class_name"];
                     console.log(artist);
+                    // a 태그 없이 페이지 이동
+                    location.href = './projects.html?' + artist;
                 } catch (error) {
                     console.error('Error uploading file', error);
                 }
             }
+
         </script>
     </body>
 </html>

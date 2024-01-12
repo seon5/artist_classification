@@ -600,6 +600,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  margin-left: auto;
 }
 
 .img-thumbnail {
@@ -7873,7 +7874,7 @@ textarea.form-control-lg {
 }
 
 .p-5 {
-  padding: 3rem !important;
+  padding: 5rem !important;
 }
 
 .px-0 {
@@ -8110,6 +8111,7 @@ textarea.form-control-lg {
 
 .fw-semibold {
   font-weight: 600 !important;
+
 }
 
 .fw-bolder {
