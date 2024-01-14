@@ -603,6 +603,12 @@ progress {
   margin-left: auto;
 }
 
+.artwork {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -4162,7 +4168,7 @@ textarea.form-control-lg {
   --bs-card-cap-padding-x: 1rem;
   --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
   --bs-card-cap-color: ;
-  --bs-card-height: ;
+  --bs-card-height: 400px;
   --bs-card-color: ;
   --bs-card-bg: #fff;
   --bs-card-img-overlay-padding: 1rem;
@@ -11588,9 +11594,11 @@ html {
   height: 75vw;
   width: 75vw;
   border-radius: 5vw;
-  margin-top: 5vw;
+  /* margin-top: 5vw; */
   max-height: 40rem;
   max-width: 40rem;
+  background-image: url('../assets/frame.png');
+  background-size: contain;
 }
 .profile .profile-img {
   /* height: 80vw;
